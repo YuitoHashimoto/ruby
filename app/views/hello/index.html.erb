@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活習慣改善アプリ - Home</title>
+</head>
+<body id="home">
+    <div class="wrap">
+        <main class="home">
+            <div id="configBtn"></div>
+            <div id="addBtn"></div>
+            <div class="home__head">
+                <h1>1習慣カレンダー</h1>
+            </div>
+            <div class="home__main">
+                <div class="home__main__time">
+                    <h2>起床・就寝</h2>
+                    <div class="home__main__time__box">
+                        <div class="right">
+                            <p id="getup">07:00</p>
+                        </div>
+                        <div>
+                            <p id="sleep">24:00</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="home__main__content">
+                    <li class="home__main__content__box">
+                        <div class="home__main__content__box__day"><p>月</p></div>
+                        <div class="home__main__content__box__plans">
+                            <div>
+                                <p>勉強</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="home__main__content__box">
+                        <div class="home__main__content__box__day"><p>火</p></div>
+                        <div class="home__main__content__box__plans"></div>
+                    </li>
+                    <li class="home__main__content__box">
+                        <div class="home__main__content__box__day"><p>水</p></div>
+                        <div class="home__main__content__box__plans"></div>
+                    </li>
+                    <li class="home__main__content__box">
+                        <div class="home__main__content__box__day"><p>木</p></div>
+                        <div class="home__main__content__box__plans"></div>
+                    </li>
+                    <li class="home__main__content__box">
+                        <div class="home__main__content__box__day"><p>金</p></div>
+                        <div class="home__main__content__box__plans"></div>
+                    </li>
+                    <li class="home__main__content__box">
+                        <div class="home__main__content__box__day"><p>月</p></div>
+                        <div class="home__main__content__box__plans"></div>
+                    </li>
+                    <li class="home__main__content__box">
+                        <div class="home__main__content__box__day"><p>土</p></div>
+                        <div class="home__main__content__box__plans"></div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="modalBg" class="modalBg">
+                <!--ここから-->
+                <div class="modalWrapper">
+                    <div class="modalContents" id="modalContents" >
+                        <!--曜日チェックボックス-->
+                        <div class="check1">
+                            <div class="day1">
+                                <input type="checkbox" value="0"><p>日</p>
+                            </div>
+                            <div class="day1">
+                                <input type="checkbox" value="0"><p>月</p>
+                            </div>
+                            <div class="day1">
+                                <input type="checkbox" value="0"><p>火</p>
+                            </div>
+                            <div class="day1">
+                                <input type="checkbox" value="0"><p>水</p>
+                            </div>
+                        </div>
+                        <div class="check2">
+                            <div class="day2">
+                                <input type="checkbox" value="0"><p>木</p>
+                            </div>
+                            <div class="day2">
+                                <input type="checkbox" value="0"><p>金</p>
+                            </div>
+                            <div class="day2">
+                                <input type="checkbox" value="0"><p>土</p>
+                            </div>
+                        </div>
+                        
+                        <!--時間入力ボックス-->
+                        <div class="timer">
+                            <input type="time">
+                            <p>〜</p>
+                            <input type="time">
+                        </div>
+                        <div class="text">
+                            <input type="text" placeholder="タスク名">
+                        </div>
+                        
+                        <!--タスク保存ボタン・削除ボタン-->
+                        <div class = "button">
+                            <button class="save">保存</button>
+                            <button class="delete">削除</button>
+                        </div>
+                    </div>
+                </div>
+                <!--ここまで-->
+            </div>
+
+        </main>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.7/push.min.js"></script>
+</body>
+</html>
